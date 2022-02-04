@@ -1,0 +1,12 @@
+.navbar-custom {
+    height: 60px;
+}
+
+.brand-container {
+    margin-left: 40px;
+}
+
+.brand-container a {
+    font-size: 24px;
+    font-weight: 500;
+}
