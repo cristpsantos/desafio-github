@@ -3,10 +3,25 @@
 }
 
 .brand-container {
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 .brand-container a {
     font-size: 24px;
     font-weight: 500;
+}
+
+@media(min-width: 576px) {
+    .navbar-custom {
+        height: 60px;
+    }
+    
+    .brand-container {
+        margin-left: 40px;
+    }
+    
+    .brand-container a {
+        font-size: 24px;
+        font-weight: 500;
+    } 
 }

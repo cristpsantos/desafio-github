@@ -1,16 +1,31 @@
 p {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 700;
     color: #7E7E7E;
     letter-spacing: 0.02em;
 }
 
 .home-container {
-    margin-top: 30px;
-    padding-left: 40px;
+    margin-top: 20px;
+    padding: 0 10px 0 10px;
 }
 
 .title-home {
-    font-size: 50px;
+    font-size: 33px;
     font-weight: 700;
+}
+
+@media(min-width: 576px) {
+    p {
+        font-size: 24px
+    }
+
+    .home-container {
+        padding: 0;
+        padding-left: 40px;
+    }
+
+    .title-home {
+        font-size: 50px;
+    }
 }
