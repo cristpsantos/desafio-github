@@ -28,3 +28,53 @@ input {
     display: flex;
     flex-direction: column;
 }
+
+.profile-container {
+    background: hsl(0, 0%, 96%);
+    border-radius: 8px;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 40px 30px;
+}
+
+.profile-container img {
+    width: 247px;
+    height: 247px;
+}
+
+.profile-info {
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 6px;
+    flex: 1;
+    padding: 8px 15px 15px 15px;
+    margin-left: 20px;
+}
+
+.profile-info h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1890FF;
+    margin-bottom: 15px;
+}
+
+.profile-item {
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.profile-item span {
+    margin-right: 10px;
+}
+
+.profile-item p {
+    margin: 0;
+}
