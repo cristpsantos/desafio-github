@@ -19,7 +19,7 @@ const Profile = () => {
                     </div>
                     <div className="profile-info">
                         <h3>Informações</h3>
-                        <div className="profile-item">
+                        <div className="profile-item profile-link">
                             <span>Perfil:</span><p><a href="https://api.github.com/users/acenelio">https://api.github.com/users/acenelio</a></p>
                         </div>
                         <div className="profile-item">

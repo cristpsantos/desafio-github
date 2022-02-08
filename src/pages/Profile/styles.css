@@ -1,5 +1,5 @@
 input {
-    width: 300px;
+    width: 200px;
     background: #FFFFFF;
     border: 1px solid #D9D9D9;
     box-sizing: border-box;
@@ -33,7 +33,8 @@ input {
     background: hsl(0, 0%, 96%);
     border-radius: 8px;
     display: flex;
-    margin-top: 50px;
+    flex-direction: column;
+    margin-top: 30px;
     margin-bottom: 30px;
     padding: 40px 30px;
 }
@@ -50,7 +51,8 @@ input {
     border-radius: 6px;
     flex: 1;
     padding: 8px 15px 15px 15px;
-    margin-left: 20px;
+    margin-left: 5px;
+    margin-top: 10px;
 }
 
 .profile-info h3 {
@@ -71,10 +73,43 @@ input {
     padding: 5px;
 }
 
+.profile-item.profile-link {
+    display: block;
+}
+
+.profile-item.profile-link a {
+   font-size: 11px;
+}
+
 .profile-item span {
     margin-right: 10px;
+    font-weight: 700;
+    color: #737373
 }
 
 .profile-item p {
     margin: 0;
+    color: #737373
+}
+
+@media(min-width: 768px) {
+    input {
+        width: 300px;  
+    }
+
+    .profile-item.profile-link {
+        display: flex;
+    }
+
+    .profile-container {
+        flex-direction: row;
+    }
+
+    .profile-info {
+        margin-left: 20px;
+    }
+
+    .profile-item.profile-link a {
+        font-size: 16px;
+     }
 }
