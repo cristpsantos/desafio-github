@@ -89,7 +89,9 @@ input {
 
 .profile-item p {
     margin: 0;
-    color: #737373
+    color: #737373;
+    font-size: 16px;
+    font-weight: 400px;
 }
 
 @media(min-width: 768px) {

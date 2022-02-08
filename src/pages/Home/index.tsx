@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
 import './styles.css';
 
@@ -8,7 +9,9 @@ const Home = () => {
                 Desafio Github API
             </h1>
             <p>Bootcamp Spring React - DevSuperior</p>
-            <Button description="Começar"/>
+            <Link to="/profile">
+                <Button description="Começar"/>
+            </Link>
         </div>
     );
 }
