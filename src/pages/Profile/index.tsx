@@ -1,6 +1,7 @@
 import axios from 'axios';
 import Button from 'components/Button';
 import { useState } from 'react';
+import ProfileLoader from './ProfileLoader';
 
 import './styles.css';
 
@@ -19,6 +20,8 @@ type ProfileGit = {
 
 const Profile = () => {
 
+    const [isLoading, setIsLoading] = useState(false);
+
     const [formData, setFormData] = useState<FormData>({
         prof: '',
     });
@@ -32,12 +35,16 @@ const Profile = () => {
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         
+        setIsLoading(true);
+
         axios.get(`https://api.github.com/users/${formData.prof}`)
             .then((response) => {
                 setProfileGit(response.data);
+                setIsLoading(false);
             })
             .catch(() => {
                 setProfileGit(undefined);
+                setIsLoading(false);
             })
     }
 
@@ -50,7 +57,7 @@ const Profile = () => {
                     <Button description="Encontrar" />
                 </form>
             </div>
-            {profileGit && (
+            {isLoading ? <ProfileLoader /> :(profileGit && (
             <div>
                 <div className="profile-container">
                     <div className="profile-img">
@@ -73,7 +80,7 @@ const Profile = () => {
                     </div>
                 </div>
             </div>
-            )}
+            ))}
         </div>
     );
 }
